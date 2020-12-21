@@ -1,0 +1,76 @@
+.pic-container {
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  border-radius: 30%;
+  cursor: pointer;
+  transition: box-shadow 0.1s ease;
+
+  &:hover img {
+    transform: scale(1.15);
+  }
+}
+
+.pic {
+  width: 170px;
+  height: 170px;
+  position: relative;
+  left: -10px;
+  transition: transform 0.4s ease;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  margin: 0px 25px;
+  height: auto;
+}
+
+.name {
+  // color: rgb(209, 209, 209);
+  font-size: 5rem;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  padding-left: 50px;
+  letter-spacing: 4px;
+
+  &::before {
+    font-family: "Montserrat", sans-serif;
+    content: "@";
+    margin-right: 7px;
+    font-weight: 600;
+  }
+}
+
+.svg-header {
+  height: 50px;
+  margin: 10px;
+}
+
+.flag {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  width: 60px;
+  height: 60px;
+  transition: transform 0.25s ease;
+  margin: 10px;
+}
+
+.flag:hover {
+  transform: scale(1.1);
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
