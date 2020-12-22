@@ -4,6 +4,7 @@
   width: 150px;
   border-radius: 30%;
   cursor: pointer;
+  margin-left: 20px;
   transition: box-shadow 0.1s ease;
 
   &:hover img {
@@ -25,25 +26,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 25px;
-  margin: 0px 25px;
   height: auto;
-}
-
-.name {
-  // color: rgb(209, 209, 209);
-  font-size: 5rem;
-  font-weight: 300;
-  font-family: "Montserrat", sans-serif;
-  margin: 0px;
-  padding-left: 50px;
-  letter-spacing: 4px;
-
-  &::before {
-    font-family: "Montserrat", sans-serif;
-    content: "@";
-    margin-right: 7px;
-    font-weight: 600;
-  }
 }
 
 .svg-header {
@@ -69,6 +52,7 @@
 }
 
 .socials {
+  margin-right: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;

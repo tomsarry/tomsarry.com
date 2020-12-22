@@ -1,4 +1,7 @@
 {
-    "welcome.label": "Bienvenue",
-    "thankyou.label": "Merci"
+    "Technologies": "Technologies / Compétences",
+    "Projects": "Projets",
+    "Smaller Projects": "Petits Projects",
+    "Main": "Principales",
+    "Others": "Autres"
 }

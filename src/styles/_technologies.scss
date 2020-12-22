@@ -1,0 +1,39 @@
+.svg-skill {
+  height: 80px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  background: rgb(240, 240, 240);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.container-skills {
+  padding: 0px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.react {
+  transition: transform 0.5s ease;
+}
+
+.react:hover {
+  transform: rotate(180deg);
+}

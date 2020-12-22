@@ -12,9 +12,6 @@ const Header = () => {
                 <img src={face} alt="Tom Sarry" className="pic" />
             </div>
 
-            <h1 className="name">tomsarry</h1>
-
-
             <div className="socials">
                 <LanguageSelector />
                 <img src={github} alt="github" className="svg-header" />

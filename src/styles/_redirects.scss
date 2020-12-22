@@ -1,0 +1,25 @@
+.table-links {
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 30px;
+
+  div {
+    margin: 20px 0px;
+  }
+}
+
+.name {
+  // color: rgb(209, 209, 209);
+  font-size: 5rem;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  // padding-left: 20px;
+  letter-spacing: 4px;
+
+  &::before {
+    content: "@";
+    margin-right: 7px;
+    font-weight: 600;
+  }
+}

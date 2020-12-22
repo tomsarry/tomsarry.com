@@ -1,0 +1,28 @@
+.container {
+  width: 85vw;
+  margin: 50px 50px;
+  h2 {
+    margin: 0px;
+  }
+}
+
+.content {
+  border-radius: 15px;
+  border: 1px solid black;
+  min-height: 150px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Comfortaa", cursive;
+}
+
+.content-lang {
+  font-family: "Comfortaa", cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+}
