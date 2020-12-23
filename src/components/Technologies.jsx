@@ -11,6 +11,7 @@ import js from "../assets/svgs/javascript.svg";
 import git from "../assets/svgs/git.svg";
 import netlify from "../assets/svgs/netlify.svg";
 import heroku from "../assets/svgs/heroku.svg";
+import ts from "../assets/svgs/typescript.svg";
 
 const Technologies = () => {
     const { t } = useTranslation()
@@ -47,6 +48,10 @@ const Technologies = () => {
                     <h3 className="subsection-title">{t("Others")}</h3>
 
                     <div className="skills">
+
+                    <div className="skill">
+                            <img src={ts} alt="ts" className="svg-skill"/>
+                        </div>
 
                          <div className="skill">
                             <img src={git} alt="git" className="svg-skill"/>

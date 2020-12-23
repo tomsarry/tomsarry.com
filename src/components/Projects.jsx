@@ -69,12 +69,7 @@ const Projects = () => {
                 </div>
 
                 <div className="proj-content">
-                    <div className="proj-pic">
-                        {/* <a href="https://wasted-on-yt.netlify.app/" target="_blank" rel="noreferrer" className="proj-site"> */}
-                            <img src={kattis} alt="kattis" className="proj-img"/>
-                            {/* <span className="reveal-pic">{t("To Site")}</span> */}
-                        {/* </a> */}
-                    </div>
+                        <img src={kattis} alt="kattis" className="noreveal"/>     
                 
                     <div className="proj-desc">
                         <p className="proj-text">{t("Kattis")}</p>

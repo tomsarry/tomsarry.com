@@ -13,3 +13,10 @@
     width: 80%;
   }
 }
+
+@media (max-width: 910px) {
+  .sm-project {
+    flex-direction: column;
+  }
+}
+

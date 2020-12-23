@@ -6,5 +6,7 @@
     "Others": "Others",
     "WOYT": "Full Stack project that gives an estimate of the time that you spent on your YouTube account.",
     "Kattis": "API / Webscraper to retrieve your solved problems on Kattis.",
+    "Weather": "CLI weather app",
+    "Quotes": "Random quote generator",
     "To Site": "To Site"
 }

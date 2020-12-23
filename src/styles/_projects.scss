@@ -1,6 +1,6 @@
-// .project {
-
-// }
+.project {
+    margin-bottom: 40px;
+}
 
 .proj-name {
     font-size: 2.5rem;
@@ -42,6 +42,11 @@
         filter: blur(0);
         opacity: 1;
     }
+}
+
+.noreveal {
+    border-radius: 25px;
+    width: 600px;
 }
 
 .proj-img {

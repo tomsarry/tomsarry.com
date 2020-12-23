@@ -1,7 +1,12 @@
-@import "header", "redirects", "container", "technologies", "projects", "mobile";
+@import "header", "redirects", "container", "technologies", "projects", "mobile", "smProject";
 
 * {
   box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  // min-height
 }
 
 .App {

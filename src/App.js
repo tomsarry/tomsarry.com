@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next'
 import "./styles/main.scss"
 import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
+import SmallerProjects from "./components/SmallerProjects";
 
 function App() {
   const { t, i18n } = useTranslation()
@@ -18,6 +19,7 @@ function App() {
 
       <Technologies />
       <Projects />
+      <SmallerProjects />
       {/* <Container title={t("Projects")}/>
       <Container title={t("Smaller Projects")}/> */}
     </div>
