@@ -14,8 +14,12 @@ const Header = () => {
 
             <div className="socials">
                 <LanguageSelector />
-                <img src={github} alt="github" className="svg-header" />
-                <img src={linkedin} alt="linkedin" className="svg-header" />
+                <a href="https://github.com/tomsarry" rel="noreferrer" target="_blank">
+                        <img src={github} alt="github" className="svg-header"/>
+                </a>
+                <a href="hhttps://www.linkedin.com/in/tom-sarry-5525a8173/" rel="noreferrer" target="_blank">
+                        <img src={linkedin} alt="linkedin" className="svg-header"/>
+                </a>
             </div>
         </header>
     );

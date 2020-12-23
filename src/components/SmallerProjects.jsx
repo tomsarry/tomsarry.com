@@ -7,6 +7,7 @@ import sass from "../assets/svgs/sass.svg";
 import cli from "../assets/svgs/cli.svg";
 import api from "../assets/svgs/api.svg";
 import github from "../assets/svgs/github.svg";
+import link from "../assets/svgs/link.svg";
 
 const SmallerProjects = () => {
     const { t } = useTranslation()
@@ -21,7 +22,9 @@ const SmallerProjects = () => {
                     <img src={go} alt="go" className="small-svg"/>
                     <img src={api} alt="api" className="small-svg"/>
                     <img src={cli} alt="cli" className="small-svg"/>
-                    <img src={github} alt="github" className="small-svg gh"/>
+                    <a href="https://github.com/tomsarry/weather#weather" rel="noreferrer" target="_blank">
+                        <img src={github} alt="github" className="small-svg gh"/>
+                    </a>
                 </div>
             </div>
 
@@ -32,7 +35,15 @@ const SmallerProjects = () => {
                     <img src={react} alt="react" className="small-svg"/>
                     <img src={sass} alt="sass" className="small-svg"/>
                     <img src={api} alt="api" className="small-svg"/>
-                    <img src={github} alt="github" className="small-svg gh"/>
+
+                    <a href="https://github.com/tomsarry/rand-quotes#the-project" rel="noreferrer" target="_blank">
+                        <img src={github} alt="github" className="small-svg gh"/>
+                    </a>
+
+                    <a href="https://quote-rand.netlify.app/" rel="noreferrer" target="_blank">
+                        <img src={link} alt="link" className="small-svg"/>
+                    </a>
+                    
                 </div>
             </div>
         </div>
