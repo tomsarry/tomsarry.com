@@ -4,6 +4,7 @@ import github from "../assets/svgs/github.svg";
 import link from "../assets/svgs/link.svg";
 
 import woyt from "../assets/pics/woyt.PNG";
+import kattis from "../assets/pics/kattis.PNG";
 
 import go from "../assets/svgs/go.svg";
 import react from "../assets/svgs/react.svg"
@@ -11,6 +12,8 @@ import sass from "../assets/svgs/sass.svg";
 import heroku from "../assets/svgs/heroku.svg";
 import netlify from "../assets/svgs/netlify.svg";
 import ts from "../assets/svgs/typescript.svg";
+import cli from "../assets/svgs/cli.svg";
+import api from "../assets/svgs/api.svg";
 
 const Projects = () => {
     const { t } = useTranslation()
@@ -22,20 +25,19 @@ const Projects = () => {
                 <div className="proj-header">
                     <h3 className="proj-name">Wasted On YouTube</h3>
                     <div className="links">
-                        <a href="https://wasted-on-yt.netlify.app/" target="_blank">
+                        <a href="https://wasted-on-yt.netlify.app/" rel="noreferrer" target="_blank">
                             <img src={link} alt="link" className="svg-header"/>
                         </a>
 
-                        <a href="https://github.com/tomsarry/WOYT#wasted-on-youtube" target="_blank">
+                        <a href="https://github.com/tomsarry/WOYT#wasted-on-youtube" rel="noreferrer" target="_blank">
                             <img src={github} alt="github" className="svg-header"/>
                         </a>
                     </div>
-                    
                 </div>
 
                 <div className="proj-content">
                     <div className="proj-pic">
-                        <a href="https://wasted-on-yt.netlify.app/" target="_blank" className="proj-site">
+                        <a href="https://wasted-on-yt.netlify.app/" target="_blank" rel="noreferrer" className="proj-site">
                             <img src={woyt} alt="woyt" className="proj-img"/>
                             <span className="reveal-pic">{t("To Site")}</span>
                         </a>
@@ -53,8 +55,36 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                
+            </div>
 
+            <div className="project">
+                <div className="proj-header">
+                    <h3 className="proj-name">Kattis Scrapper 🔎</h3>
+                    <div className="links">
+
+                        <a href="https://github.com/tomsarry/kattis-scraper#kattis-scraper" rel="noreferrer" target="_blank">
+                            <img src={github} alt="github" className="svg-header"/>
+                        </a>
+                    </div>
+                </div>
+
+                <div className="proj-content">
+                    <div className="proj-pic">
+                        {/* <a href="https://wasted-on-yt.netlify.app/" target="_blank" rel="noreferrer" className="proj-site"> */}
+                            <img src={kattis} alt="kattis" className="proj-img"/>
+                            {/* <span className="reveal-pic">{t("To Site")}</span> */}
+                        {/* </a> */}
+                    </div>
+                
+                    <div className="proj-desc">
+                        <p className="proj-text">{t("Kattis")}</p>
+                        <div className="proj-skills">
+                            <img src={go} alt="go" className="small-svg"/>
+                            <img src={cli} alt="cli" className="small-svg"/>
+                            <img src={api} alt="api" className="small-svg"/>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
