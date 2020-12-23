@@ -1,5 +1,7 @@
+@use "styles";
+
 .svg-skill {
-  height: 80px;
+  height: 100px;
 }
 
 .skills {
@@ -13,15 +15,13 @@
 }
 
 .skill {
-  // background: rgb(240, 240, 240);
+  background: rgb(240, 240, 240);
   border-radius: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 15px;
-  height: 80px;
-  width: 80px;
+  padding: 30px;
   margin: 10px;
 }
 
@@ -39,4 +39,8 @@
 
 .react:hover {
   transform: rotate(180deg);
+}
+
+.techs {
+  background: lighten($bg-color1, 3%);
 }

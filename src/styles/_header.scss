@@ -1,9 +1,10 @@
+@use "styles";
+
 .pic-container {
   overflow: hidden;
   height: 150px;
   width: 150px;
   border-radius: 30%;
-  cursor: pointer;
   margin-left: 20px;
   transition: box-shadow 0.1s ease;
 
@@ -20,6 +21,12 @@
   transition: transform 0.4s ease;
 }
 
+@media (max-width: 600px) {
+  .pic-container {
+    transform: scale(0.7);
+  }
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -27,6 +34,7 @@
   justify-content: space-between;
   padding: 25px;
   height: auto;
+  // background: lighten($bg-color1, 10%);
 }
 
 .svg-header {
@@ -38,17 +46,11 @@
   border: none;
   outline: none;
   background: none;
-  cursor: pointer;
   padding: 0;
   margin: 0;
   width: 60px;
   height: 60px;
-  transition: transform 0.25s ease;
   margin: 10px;
-}
-
-.flag:hover {
-  transform: scale(1.1);
 }
 
 .socials {

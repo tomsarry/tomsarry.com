@@ -1,4 +1,4 @@
-@import "header", "redirects", "container", "technologies", "projects", "smProject", "footer", "mobile";
+@import "styles", "header", "redirects", "container", "technologies", "projects", "smProject", "footer", "mobile";
 
 * {
   box-sizing: border-box;
@@ -6,13 +6,17 @@
 
 html, body {
   width: 100%;
-  // min-height
+  color: $txt-color1;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
 
 .App {
   text-align: center;
-  // background-color: #25252b;
+  background-color: $bg-color1;
   display: flex;
+  min-width: 100%;
   flex-direction: column;
   //   justify-content: center;
   align-items: center;
@@ -23,12 +27,26 @@ html, body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  background: lighten($bg-color1, 5%);
 }
 
 .landing-main {
-  margin: 0px auto;
+  // margin: 0px auto;
+  width: 100%;
   min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
+.anim {
+  cursor: pointer;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+

@@ -1,7 +1,9 @@
+@use "styles";
+
 .table-links {
   font-family: "Comfortaa", cursive;
-  font-weight: 400;
-  font-size: 3rem;
+  font-weight: 900;
+  font-size: 4rem;
   margin: 30px;
 
   div {
@@ -9,17 +11,57 @@
   }
 }
 
+.redirect {
+  text-decoration: none;
+  color: $txt-color1;
+}
+
 .name {
   // color: rgb(209, 209, 209);
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 300;
+  // font-family: 'Courier New', Courier, monospace;
   font-family: "Montserrat", sans-serif;
-  // padding-left: 20px;
   letter-spacing: 4px;
 
   &::before {
-    content: "@";
-    margin-right: 7px;
-    font-weight: 600;
+    content: "$";
+    // font-family: "Comfortaa", cursive;
+    font-family: 'Courier New', Courier, monospace;
+    color: $fr-color1;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 1.2em;
+    position: relative;
+    top: 6px;
+  }
+
+  &::after {
+    content: "";
+    margin-left: 5px;
+    position: relative;
+    top: 6px;
+    display: inline-block;
+    border-radius: 2px;
+    width: 55px;
+    height: 5px;
+    background: $fr-color1;
+    animation-name: cursor;
+    animation-direction: alternate;
+    animation-duration: 0.6s;
+    // animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }

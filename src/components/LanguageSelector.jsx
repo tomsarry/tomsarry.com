@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { ReactComponent as UsFlag } from "../assets/svgs/ukFlag.svg"
+import { ReactComponent as UkFlag } from "../assets/svgs/ukFlag.svg"
 import { ReactComponent as FrFlag } from "../assets/svgs/frFlag.svg"
 
 const LanguageSelector = () => {
@@ -28,8 +28,8 @@ const LanguageSelector = () => {
 
   return (
     <div onChange={changeLanguage}>
-      {getLanguage() === "en_US" && <button value="fr" alt="frFlag" onClick={toggleLanguage} className="flag"> <FrFlag /></button>}
-      {getLanguage() === "fr_FR" && <button value="en" alt="usFlag" onClick={toggleLanguage} className="flag"> <UsFlag /> </button>}
+      {getLanguage() === "en_US" && <button value="fr" alt="frFlag" onClick={toggleLanguage} className="flag anim"> <FrFlag /></button>}
+      {getLanguage() === "fr_FR" && <button value="en" alt="ukFlag" onClick={toggleLanguage} className="flag anim"> <UkFlag /> </button>}
     </div>
   )
 }

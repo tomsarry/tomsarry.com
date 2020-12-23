@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { useTranslation } from 'react-i18next'
 
@@ -7,7 +7,7 @@ const Footer = () => {
     return ( 
         <footer>
             <div className="info">
-                <span className="cv">
+                <span className="cv anim">
                     <a href="/assets/cv.pdf" target="_blank" rel="noopener noreferrer">
                         {t("CV")}
                     </a>

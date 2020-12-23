@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next'
 
 import go from "../assets/svgs/go.svg";
@@ -12,7 +12,7 @@ import link from "../assets/svgs/link.svg";
 const SmallerProjects = () => {
     const { t } = useTranslation()
     return ( 
-        <div className="container">
+        <div className="container sm-container" id="sm-projects">
             <h2 className="section-title">{t("Smaller Projects")}</h2>
 
             <div className="sm-project">
@@ -23,7 +23,7 @@ const SmallerProjects = () => {
                     <img src={api} alt="api" className="small-svg"/>
                     <img src={cli} alt="cli" className="small-svg"/>
                     <a href="https://github.com/tomsarry/weather#weather" rel="noreferrer" target="_blank">
-                        <img src={github} alt="github" className="small-svg gh"/>
+                        <img src={github} alt="github" className="small-svg gh anim"/>
                     </a>
                 </div>
             </div>
@@ -37,11 +37,11 @@ const SmallerProjects = () => {
                     <img src={api} alt="api" className="small-svg"/>
 
                     <a href="https://github.com/tomsarry/rand-quotes#the-project" rel="noreferrer" target="_blank">
-                        <img src={github} alt="github" className="small-svg gh"/>
+                        <img src={github} alt="github" className="small-svg gh anim"/>
                     </a>
 
                     <a href="https://quote-rand.netlify.app/" rel="noreferrer" target="_blank">
-                        <img src={link} alt="link" className="small-svg"/>
+                        <img src={link} alt="link" className="small-svg anim"/>
                     </a>
                     
                 </div>

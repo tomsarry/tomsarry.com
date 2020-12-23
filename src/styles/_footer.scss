@@ -1,6 +1,8 @@
+@use "styles";
+
 footer {
     width: 100%;
-    background: rgb(202, 202, 202);
+    background: darken($bg-color1, 3%);
     font-size: 1.4rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -12,16 +14,19 @@ footer {
 
 .contact {
     margin-top: 25px;
+    font-size: 2rem;;
+    font-weight: 600;
 }
 
 .cv {
-    background: white;
-    padding: 5px 15px;
+    background: $fr-color1;
+    padding: 8px 20px;
     border-radius: 10px;
     display: inline-block;
 
     a {
+        font-weight: 700;
         text-decoration: none;
-        color: black
+        color: $txt-color1;
     }
 }

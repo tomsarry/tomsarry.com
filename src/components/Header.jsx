@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import face from "../assets/face.jpg"
 import github from "../assets/svgs/github.svg";
 import linkedin from "../assets/svgs/linkedin.svg";
@@ -15,10 +15,10 @@ const Header = () => {
             <div className="socials">
                 <LanguageSelector />
                 <a href="https://github.com/tomsarry" rel="noreferrer" target="_blank">
-                        <img src={github} alt="github" className="svg-header"/>
+                    <img src={github} alt="github" className="svg-header anim gh"/>
                 </a>
                 <a href="hhttps://www.linkedin.com/in/tom-sarry-5525a8173/" rel="noreferrer" target="_blank">
-                        <img src={linkedin} alt="linkedin" className="svg-header"/>
+                    <img src={linkedin} alt="linkedin" className="svg-header anim"/>
                 </a>
             </div>
         </header>

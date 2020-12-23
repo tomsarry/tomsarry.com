@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import github from "../assets/svgs/github.svg";
 import link from "../assets/svgs/link.svg";
@@ -18,7 +18,7 @@ import api from "../assets/svgs/api.svg";
 const Projects = () => {
     const { t } = useTranslation()
     return (
-        <div className="container">
+        <div className="container" id="projects">
             <h2 className="section-title">{t("Projects")}</h2>
 
             <div className="project">
@@ -26,11 +26,11 @@ const Projects = () => {
                     <h3 className="proj-name">Wasted On YouTube</h3>
                     <div className="links">
                         <a href="https://wasted-on-yt.netlify.app/" rel="noreferrer" target="_blank">
-                            <img src={link} alt="link" className="svg-header"/>
+                            <img src={link} alt="link" className="svg-header anim"/>
                         </a>
 
                         <a href="https://github.com/tomsarry/WOYT#wasted-on-youtube" rel="noreferrer" target="_blank">
-                            <img src={github} alt="github" className="svg-header"/>
+                            <img src={github} alt="github" className="svg-header anim"/>
                         </a>
                     </div>
                 </div>
@@ -61,9 +61,8 @@ const Projects = () => {
                 <div className="proj-header">
                     <h3 className="proj-name">Kattis Scrapper 🔎</h3>
                     <div className="links">
-
                         <a href="https://github.com/tomsarry/kattis-scraper#kattis-scraper" rel="noreferrer" target="_blank">
-                            <img src={github} alt="github" className="svg-header"/>
+                            <img src={github} alt="github" className="svg-header anim"/>
                         </a>
                     </div>
                 </div>
