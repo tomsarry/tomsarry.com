@@ -4,7 +4,7 @@ import { ReactComponent as UkFlag } from "../assets/svgs/ukFlag.svg"
 import { ReactComponent as FrFlag } from "../assets/svgs/frFlag.svg"
 
 const LanguageSelector = () => {
-  const { t, i18n } = useTranslation()
+  const { i18n } = useTranslation()
 
   const changeLanguage = (event) => {
     i18n.changeLanguage(event.target.value);

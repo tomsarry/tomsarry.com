@@ -42,13 +42,13 @@
     position: relative;
     top: 6px;
     display: inline-block;
-    border-radius: 2px;
+    border-radius: 1px;
     width: 55px;
     height: 5px;
     background: $fr-color1;
     animation-name: cursor;
     animation-direction: alternate;
-    animation-duration: 0.6s;
+    animation-duration: 0.65s;
     // animation-timing-function: ease;
     animation-iteration-count: infinite;
   }
