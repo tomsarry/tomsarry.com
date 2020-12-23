@@ -12,7 +12,9 @@ const LanguageSelector = () => {
   }
 
   const getLanguage = () => {
-    return localStorage.getItem("language");
+    var lng = localStorage.getItem("language");
+    lng === "en_US" ? lng = "en_US" : lng = "fr_FR";
+    return lng;
   }
 
   const setLanguage = (lng) => {
@@ -25,6 +27,8 @@ const LanguageSelector = () => {
 
     i18n.changeLanguage(lng);
   }
+
+  console.log(getLanguage());
 
   return (
     <div onChange={changeLanguage}>
