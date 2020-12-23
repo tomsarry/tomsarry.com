@@ -7,6 +7,7 @@ import "./styles/main.scss"
 import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
 import SmallerProjects from "./components/SmallerProjects";
+import Footer from "./components/Footer";
 
 function App() {
   const { t, i18n } = useTranslation()
@@ -20,8 +21,7 @@ function App() {
       <Technologies />
       <Projects />
       <SmallerProjects />
-      {/* <Container title={t("Projects")}/>
-      <Container title={t("Smaller Projects")}/> */}
+      <Footer />
     </div>
   );
 }

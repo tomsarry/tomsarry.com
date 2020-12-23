@@ -1,0 +1,27 @@
+footer {
+    width: 100%;
+    background: grey;
+    font-size: 1.4rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.info {
+    padding: 25px;
+}
+
+.contact {
+    margin-top: 25px;
+}
+
+.cv {
+    background: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: inline-block;
+
+    a {
+        text-decoration: none;
+        color: black
+    }
+}
