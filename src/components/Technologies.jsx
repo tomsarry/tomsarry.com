@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import api from "../assets/svgs/api.svg";
-import cli from "../assets/svgs/cli.svg";
+// import cli from "../assets/svgs/cli.svg";
 import sass from "../assets/svgs/sass.svg";
 import react from "../assets/svgs/react.svg";
 import go from "../assets/svgs/go.svg";

@@ -1,11 +1,11 @@
 import Header from "./components/Header";
 import Redirects from "./components/Redirects";
-import Container from "./components/Container";
 
 import { useTranslation } from 'react-i18next'
 
 import "./styles/main.scss"
 import Technologies from "./components/Technologies";
+import Projects from "./components/Projects";
 
 function App() {
   const { t, i18n } = useTranslation()
@@ -17,6 +17,7 @@ function App() {
       </div>
 
       <Technologies />
+      <Projects />
       {/* <Container title={t("Projects")}/>
       <Container title={t("Smaller Projects")}/> */}
     </div>

@@ -1,4 +1,8 @@
-@import "header", "redirects", "container", "technologies", "mobile";
+@import "header", "redirects", "container", "technologies", "projects", "mobile";
+
+* {
+  box-sizing: border-box;
+}
 
 .App {
   text-align: center;

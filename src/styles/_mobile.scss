@@ -3,3 +3,13 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 1475px) {
+  .proj-content {
+    flex-direction: column;
+  }
+
+  .proj-desc {
+    width: 80%;
+  }
+}
