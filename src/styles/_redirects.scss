@@ -17,19 +17,26 @@
 }
 
 .name {
-  // color: rgb(209, 209, 209);
   font-size: 6rem;
   font-weight: 300;
-  // font-family: 'Courier New', Courier, monospace;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 4px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  // align-items: center;
+
+  span {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    position: absolute;
+  }
 
   &::before {
-    content: "$";
-    // font-family: "Comfortaa", cursive;
+    content: "$ ";
+    margin-right: 20px;
     font-family: 'Courier New', Courier, monospace;
     color: $fr-color1;
-    margin-right: 20px;
     font-weight: 400;
     font-size: 1.2em;
     position: relative;
@@ -40,7 +47,8 @@
     content: "";
     margin-left: 5px;
     position: relative;
-    top: 6px;
+    bottom: -110px;
+    right: 0px;
     display: inline-block;
     border-radius: 1px;
     width: 55px;
@@ -49,7 +57,6 @@
     animation-name: cursor;
     animation-direction: alternate;
     animation-duration: 0.65s;
-    // animation-timing-function: ease;
     animation-iteration-count: infinite;
   }
 }
@@ -63,5 +70,50 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+.letter1 {
+  animation: anim1 0.05s ease 0.25s;
+}
+
+.letter2 {
+  animation: anim1 0.05s ease 0.46s;
+}
+
+.letter3 {
+  animation: anim1 0.05s ease 0.66s;
+}
+
+.letter4 {
+  animation: anim1 0.05s ease 0.88s;
+}
+
+.letter5 {
+  animation: anim1 0.05s ease 1.00s;
+}
+
+.letter6 {
+  animation: anim1 0.05s ease 1.22s;
+}
+
+.letter7 {
+  animation: anim1 0.05s ease 1.30s;
+}
+
+.letter8 {
+  animation: anim1 0.05s ease 1.5s;
+}
+
+@keyframes anim1 {
+  0% {
+    opacity: 0;
+    // display: none;
+    position: absolute;
+  }
+  100% {
+    opacity: 1;
+    position: initial;
+    // display: block;
   }
 }
