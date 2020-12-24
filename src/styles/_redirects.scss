@@ -14,7 +14,27 @@
 .redirect {
   text-decoration: none;
   color: $txt-color1;
+
+  span {
+    position: relative;
+    display: inline-block;
+  }
+
+  &:hover .arrow {
+    right: -75px;
+  }
 }
+
+.arrow {
+  position: absolute;
+  height: 40px;
+  right: -65px;
+  top: 15px;
+  transform: rotate(90deg);
+  margin-left: 20px;
+  transition: right 0.2s ease;
+}
+
 
 .name {
   font-size: 6rem;
@@ -24,7 +44,6 @@
   display: flex;
   justify-content: center;
   position: relative;
-  // align-items: center;
 
   span {
     opacity: 0;

@@ -1,6 +1,7 @@
 import React from 'react';
 // import { withTranslation } from 'react-i18next'
 import { useTranslation } from 'react-i18next';
+import arrow from "../assets/svgs/arrow.svg";
 
 
 const Redirects = () => {
@@ -19,15 +20,33 @@ const Redirects = () => {
             </h1>
         
             <div className="table-links">
-                <a href="#techs" className="redirect">
-                    <div>{t('Technologies')}<span></span></div>
-                </a>
-                <a href="#projects" className="redirect">
-                    <div>{t('Projects')}<span></span></div>
-                </a>
-                <a href="#sm-projects" className="redirect">
-                    <div>{t('Smaller Projects')}<span></span></div>
-                </a>
+                <div>
+                    <a href="#techs" className="redirect">
+                        <span>
+                            {t('Technologies')}
+                            <img src={arrow} alt="arrow" className="arrow"/>
+                        </span>
+                    </a>
+
+                </div>
+
+                <div>
+                    <a href="#projects" className="redirect">
+                        <span>
+                            {t('Projects')}
+                            <img src={arrow} alt="arrow" className="arrow"/>
+                        </span>
+                    </a>
+                </div>
+                
+                <div>
+                    <a href="#sm-projects" className="redirect">
+                        <span>
+                            {t('Smaller Projects')}
+                            <img src={arrow} alt="arrow" className="arrow"/>
+                        </span>
+                    </a>
+                </div>
             </div>
 
         </div>
