@@ -34,11 +34,10 @@
   justify-content: space-between;
   padding: 25px;
   height: auto;
-  // background: lighten($bg-color1, 10%);
 }
 
 .svg-header {
-  height: 50px;
+  width: 50px;
   margin: 10px;
 }
 
@@ -46,11 +45,10 @@
   border: none;
   outline: none;
   background: none;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 10px;
   width: 60px;
   height: 60px;
-  margin: 10px;
 }
 
 .socials {

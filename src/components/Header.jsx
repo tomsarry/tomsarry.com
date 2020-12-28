@@ -14,6 +14,7 @@ const Header = () => {
 
             <div className="socials">
                 <LanguageSelector />
+                <span className="sep"></span>
                 <a href="https://github.com/tomsarry" rel="noreferrer" target="_blank">
                     <img src={github} alt="github" className="svg-header anim gh"/>
                 </a>

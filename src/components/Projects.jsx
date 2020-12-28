@@ -12,7 +12,6 @@ import sass from "../assets/svgs/sass.svg";
 import heroku from "../assets/svgs/heroku.svg";
 import netlify from "../assets/svgs/netlify.svg";
 import ts from "../assets/svgs/typescript.svg";
-import cli from "../assets/svgs/cli.svg";
 import api from "../assets/svgs/api.svg";
 
 const Projects = () => {
@@ -46,12 +45,12 @@ const Projects = () => {
                     <div className="proj-desc">
                         <p className="proj-text">{t("WOYT")}</p>
                         <div className="proj-skills">
-                            <img src={react} alt="react" className="small-svg"/>
-                            <img src={ts} alt="ts" className="small-svg"/>
-                            <img src={go} alt="go" className="small-svg"/>
-                            <img src={sass} alt="sass" className="small-svg"/>
-                            <img src={netlify} alt="netlify" className="small-svg"/>
-                            <img src={heroku} alt="heroku" className="small-svg"/>
+                            <img src={react} alt="react" className="small-svg skill-standout"/>
+                            <img src={ts} alt="ts" className="small-svg skill-standout"/>
+                            <img src={go} alt="go" className="small-svg skill-standout"/>
+                            <img src={sass} alt="sass" className="small-svg skill-standout"/>
+                            <img src={netlify} alt="netlify" className="small-svg skill-standout"/>
+                            <img src={heroku} alt="heroku" className="small-svg skill-standout"/>
                         </div>
                     </div>
                 </div>
@@ -73,9 +72,8 @@ const Projects = () => {
                     <div className="proj-desc">
                         <p className="proj-text">{t("Kattis")}</p>
                         <div className="proj-skills">
-                            <img src={go} alt="go" className="small-svg"/>
-                            <img src={cli} alt="cli" className="small-svg"/>
-                            <img src={api} alt="api" className="small-svg"/>
+                            <img src={go} alt="go" className="small-svg skill-standout"/>
+                            <img src={api} alt="api" className="small-svg skill-standout"/>
                         </div>
                     </div>
                 </div>

@@ -75,6 +75,7 @@
     background: $fr-color1;
     animation-name: cursor;
     animation-direction: alternate;
+    animation-delay: 1.7s;
     animation-duration: 0.65s;
     animation-iteration-count: infinite;
   }
@@ -127,12 +128,10 @@
 @keyframes anim1 {
   0% {
     opacity: 0;
-    // display: none;
     position: absolute;
   }
   100% {
     opacity: 1;
     position: initial;
-    // display: block;
   }
 }
