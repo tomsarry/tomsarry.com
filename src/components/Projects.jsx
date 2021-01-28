@@ -2,6 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import github from "../assets/svgs/github.svg";
 import link from "../assets/svgs/link.svg";
+import {useState, useEffect} from "react"
+import Problem from "./Problem"
 
 import woyt from "../assets/pics/woyt.PNG";
 import kattis from "../assets/pics/kattis.PNG";
@@ -14,7 +16,66 @@ import netlify from "../assets/svgs/netlify.svg";
 import ts from "../assets/svgs/typescript.svg";
 import api from "../assets/svgs/api.svg";
 
+import { usePromiseTracker, trackPromise } from "react-promise-tracker";
+import { LoopCircleLoading  } from 'react-loadingg';
+import axios from "axios";
+
+const Loader = () => {
+    const { promiseInProgress } = usePromiseTracker();
+    return promiseInProgress ? (
+      <div className="loader-div">
+        {/* <h3>Fetching results...</h3> */}
+        <LoopCircleLoading color="#ffffff" size="large" style={{margin: 0}} />
+
+      </div>
+    ) : null;
+    // (pbs.map(e => ));
+};
+
+// result.map(e => <li key={e.title}>{e.title} {e.difficulty} {e.link}</li>);
+
+const API_URL = process.env.REACT_APP_API_URL+ "kattis"
+// console.log("link is: " + API_URL)
+
+// const getpbs = 
+
+// console.log(pbs)
+// const problems = pbs
+// console.log('problems are: ' + getpbs)
+
+
+
+
 const Projects = () => {
+  const [problems, setProblems] = useState([])
+
+  const getProblems = () => {
+    
+    const res = problems.map(e => <Problem key={e.Name} Name={e.Name} Difficulty={e.Difficulty} Link={e.Link} />)
+    console.log(res)
+    return res
+  }
+
+  useEffect(() => {
+    trackPromise(
+      axios.post(API_URL)
+      .then((response) => {
+        var result = response.data.Problems;
+        // TESTING: see the response object
+        console.log(result);
+        return result;
+      }).then(res => setProblems(res))
+      .catch((err) => {
+        console.log("Error : " + err);
+        alert(err.toString());
+      })
+    .catch((err) => {
+      console.log("Error : " + err);
+      alert(err.toString());
+    })
+  );
+  }, [])
+
     const { t } = useTranslation()
     return (
         <div className="container" id="projects">
@@ -77,6 +138,11 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
+                <div className="problems">
+                    <Loader />
+                    {problems !== undefined ? getProblems() : ""}
+                </div>
+                
             </div>
 
         </div>

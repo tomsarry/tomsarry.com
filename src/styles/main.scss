@@ -1,16 +1,17 @@
-@import "styles", "header", "redirects", "container", "technologies", "projects", "smProject", "footer", "mobile";
+@import "styles", "header", "redirects", "container", "technologies", "projects",
+  "smProject", "footer", "problems", "mobile";
 
 * {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   color: $txt-color1;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
 
 .App {
   text-align: center;
@@ -48,5 +49,3 @@ html, body {
     opacity: 0.7;
   }
 }
-
-

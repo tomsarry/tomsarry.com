@@ -1,0 +1,65 @@
+.problems {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.problem {
+  font-size: 1.2em;
+  border: 2px solid $fr-color1;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  // width: 60%;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.right {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.link-span {
+  background-color: $fr-color1;
+  border-radius: 5px;
+  padding: 3px 15px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s ease;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: $txt-color1;
+  // font-size: 0.8em;
+}
+
+.difficulty {
+  border-radius: 5px;
+  padding: 2px 5px;
+  // font-size: 0.8em;
+  min-width: 40px;
+  text-align: center;
+}
+
+.easy {
+  background: rgb(99, 155, 14);
+}
+
+.medium {
+  background: rgb(182, 128, 29);
+}
+
+.hard {
+  background: rgb(143, 6, 6);
+}
